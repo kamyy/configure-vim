@@ -1,20 +1,23 @@
 execute pathogen#infect()
-syntax on
 set nocompatible
 
 " Enable file type detection 
 " Load plugin for detected file type if any
 " Load indent file for detected file type if there is one
+" Enable syntax highlighting
 filetype plugin indent on
+syntax on
 
 set fileformats=unix,dos
 
 " vim-airline buffer list status bar
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='wombat'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_theme='dark'
 
 " Nerd tree toggle on/off
 nnoremap <C-n> :NERDTreeToggle<CR>
+imap <C-n> <ESC><C-n>
 
 " Clear highlighting
 nnoremap <Leader>h :nohls<CR>
@@ -38,6 +41,10 @@ imap <C-l> <ESC><C-l>
 " Quick delete buffer
 nnoremap <C-q> :bdelete<CR>
 imap <C-q> <ESC><C-q>
+
+" Quick cycle through buffers
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 " Command-line completion mode
 set wildmode=longest,list
@@ -69,3 +76,4 @@ set autochdir
 set autoread
 " Allow switch to different buffer without having to save existing buffer
 set hidden
+
