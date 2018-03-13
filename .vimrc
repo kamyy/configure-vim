@@ -77,3 +77,6 @@ set autoread
 " Allow switch to different buffer without having to save existing buffer
 set hidden
 
+" By default yank/paste to the system clipboard
+set clipboard=unnamedplus
+
