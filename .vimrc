@@ -78,5 +78,5 @@ set autoread
 set hidden
 
 " By default yank/paste to the system clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
 
