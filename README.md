@@ -12,7 +12,6 @@ In case you're interested, the Vim plugin manager I'm using is [Pathogen](https:
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
 Hopefully you'll find the files in this repo useful with some tweaks of your own.
 
