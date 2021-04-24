@@ -38,9 +38,4 @@ if [ ! -d 'vim-airline-themes' ]; then
     git clone https://github.com/vim-airline/vim-airline-themes.git
 fi
 
-if [ ! -d 'YouCompleteMe' ]; then
-    git clone https://github.com/Valloric/YouCompleteMe.git
-fi
-
 popd
-
